@@ -1,0 +1,146 @@
+{
+  "abi": [
+    {
+      "type": "function",
+      "name": "toEthSignedMessageHash",
+      "inputs": [
+        { "name": "hash", "type": "bytes32", "internalType": "bytes32" }
+      ],
+      "outputs": [{ "name": "", "type": "bytes32", "internalType": "bytes32" }],
+      "stateMutability": "pure"
+    }
+  ],
+  "bytecode": {
+    "object": "0x60f6610038600b82828239805160001a607314602b57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c8063918a15cf146038575b600080fd5b6096604336600460a8565b6040517f19457468657265756d205369676e6564204d6573736167653a0a3332000000006020820152603c8101829052600090605c01604051602081830303815290604052805190602001209050919050565b60405190815260200160405180910390f35b60006020828403121560b957600080fd5b503591905056fea26469706673582212200ce5f0e6a3c12ee6acc39f851c43c92ed623b8f06e5f0883e2431df59e61674064736f6c63430008190033",
+    "sourceMap": "94:2248:91:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;94:2248:91;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c8063918a15cf146038575b600080fd5b6096604336600460a8565b6040517f19457468657265756d205369676e6564204d6573736167653a0a3332000000006020820152603c8101829052600090605c01604051602081830303815290604052805190602001209050919050565b60405190815260200160405180910390f35b60006020828403121560b957600080fd5b503591905056fea26469706673582212200ce5f0e6a3c12ee6acc39f851c43c92ed623b8f06e5f0883e2431df59e61674064736f6c63430008190033",
+    "sourceMap": "94:2248:91:-:0;;;;;;;;;;;;;;;;;;;;;;;;2021:319;;;;;;:::i;:::-;2261:58;;631:66:101;2261:58:91;;;619:79:101;714:12;;;707:28;;;2102:7:91;;751:12:101;;2261:58:91;;;;;;;;;;;;2234:99;;;;;;2215:118;;2021:319;;;;;;;353:25:101;;;341:2;326:18;2021:319:91;;;;;;;14:180:101;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:101;;14:180;-1:-1:-1;14:180:101:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": { "toEthSignedMessageHash(bytes32)": "918a15cf" },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.25+commit.b61c2a91\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"hash\",\"type\":\"bytes32\"}],\"name\":\"toEthSignedMessageHash\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"toEthSignedMessageHash(bytes32)\":{\"details\":\"\\u8fd4\\u56de \\u4ee5\\u592a\\u574a\\u7b7e\\u540d\\u6d88\\u606f `hash`\\uff1a\\u6d88\\u606f\\u54c8\\u5e0c \\u9075\\u4ece\\u4ee5\\u592a\\u574a\\u7b7e\\u540d\\u6807\\u51c6\\uff1ahttps://eth.wiki/json-rpc/API#eth_sign[`eth_sign`] \\u4ee5\\u53ca`EIP191`:https://eips.ethereum.org/EIPS/eip-191` \\u6dfb\\u52a0\\\"\\\\x19Ethereum Signed Message:\\\\n32\\\"\\u5b57\\u6bb5\\uff0c\\u9632\\u6b62\\u7b7e\\u540d\\u7684\\u662f\\u53ef\\u6267\\u884c\\u4ea4\\u6613\\u3002\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Signature.sol\":\"ECDSA\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@chainlink/=lib/chainlink/\",\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":chainlink/=lib/chainlink/contracts/\",\":ds-test/=lib/openzeppelin-contracts/lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\"]},\"sources\":{\"lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x5ef46daa3b58ef2702279d514780316efaa952915ee1aa3396f041ee2982b0b4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2f8f2a76e23b02fc69e8cd24c3cb47da6c7af3a2d6c3a382f8ac25c6e094ade7\",\"dweb:/ipfs/QmPV4ZS4tPVv4mTCf9ejyZ1ai57EEibDRj7mN2ARDCLV5n\"]},\"lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0x7f7a26306c79a65fb8b3b6c757cd74660c532cd8a02e165488e30027dd34ca49\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d01e0b2b837ee2f628545e54d8715b49c7ef2befd08356c2e7f6c50dde8a1c22\",\"dweb:/ipfs/QmWBAn6y2D1xgftci97Z3qR9tQnkvwQpYwFwkTvDMvqU4i\"]},\"lib/openzeppelin-contracts/contracts/token/ERC721/extensions/IERC721Metadata.sol\":{\"keccak256\":\"0x37d1aaaa5a2908a09e9dcf56a26ddf762ecf295afb5964695937344fc6802ce1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ed0bfc1b92153c5000e50f4021367b931bbe96372ac6facec3c4961b72053d02\",\"dweb:/ipfs/Qmbwp8VDerjS5SV1quwHH1oMXxPQ93fzfLVqJ2RCqbowGE\"]},\"lib/openzeppelin-contracts/contracts/utils/Strings.sol\":{\"keccak256\":\"0x55f102ea785d8399c0e58d1108e2d289506dde18abc6db1b7f68c1f9f9bc5792\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6e52e0a7765c943ef14e5bcf11e46e6139fa044be564881378349236bf2e3453\",\"dweb:/ipfs/QmZEeeXoFPW47amyP35gfzomF9DixqqTEPwzBakv6cZw6i\"]},\"lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x4296879f55019b23e135000eb36896057e7101fb7fb859c5ef690cf14643757b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://87b3541437c8c443ccd36795e56a338ed12855eec17f8da624511b8d1a7e14df\",\"dweb:/ipfs/QmeJQCtZrQjtJLr6u7ZHWeH3pBnjtLWzvRrKViAi7UZqxL\"]},\"lib/openzeppelin-contracts/contracts/utils/math/Math.sol\":{\"keccak256\":\"0x005ec64c6313f0555d59e278f9a7a5ab2db5bdc72a027f255a37c327af1ec02d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4ece9f0b9c8daca08c76b6b5405a6446b6f73b3a15fab7ff56e296cbd4a2c875\",\"dweb:/ipfs/QmQyRpyPRL5SQuAgj6SHmbir3foX65FJjbVTTQrA2EFg6L\"]},\"lib/openzeppelin-contracts/contracts/utils/math/SignedMath.sol\":{\"keccak256\":\"0x5f7e4076e175393767754387c962926577f1660dd9b810187b9002407656be72\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7d533a1c97cd43a57cd9c465f7ee8dd0e39ae93a8fb8ff8e5303a356b081cdcc\",\"dweb:/ipfs/QmVBEei6aTnvYNZp2CHYVNKyZS4q1KkjANfY39WVXZXVoT\"]},\"src/ERC721.sol\":{\"keccak256\":\"0x0c8532956b2b6b3d1e57bea5130ea140f190d6eebdc852c88d34ab68db87794b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e4e79de75ed08cabd3c14d7f99dfb20c043f6e109641aead6e3925ab46e21d73\",\"dweb:/ipfs/QmSzR8z3W59q8VawwXQLjjR7fNb6gxcBwSAxMx16H1ZQYF\"]},\"src/Signature.sol\":{\"keccak256\":\"0xffe4e63cac192e0b193f130830a7403a62b0691607c04a99cf34b89d06379aeb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3b2ae3fe1c3bf9c02f556eeece1ca4ce46483289e34167062ef855bdc2acefaa\",\"dweb:/ipfs/Qmdf2TbKVsgNjLfTD49BHCmZ3C932nwxi7QebJWiwLg5dZ\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": { "version": "0.8.25+commit.b61c2a91" },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            { "internalType": "bytes32", "name": "hash", "type": "bytes32" }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "toEthSignedMessageHash",
+          "outputs": [
+            { "internalType": "bytes32", "name": "", "type": "bytes32" }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "toEthSignedMessageHash(bytes32)": {
+            "details": "返回 以太坊签名消息 `hash`：消息哈希 遵从以太坊签名标准：https://eth.wiki/json-rpc/API#eth_sign[`eth_sign`] 以及`EIP191`:https://eips.ethereum.org/EIPS/eip-191` 添加\"\\x19Ethereum Signed Message:\\n32\"字段，防止签名的是可执行交易。"
+          }
+        },
+        "version": 1
+      },
+      "userdoc": { "kind": "user", "methods": {}, "version": 1 }
+    },
+    "settings": {
+      "remappings": [
+        "@chainlink/=lib/chainlink/",
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "chainlink/=lib/chainlink/contracts/",
+        "ds-test/=lib/openzeppelin-contracts/lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/"
+      ],
+      "optimizer": { "enabled": true, "runs": 200 },
+      "metadata": { "bytecodeHash": "ipfs" },
+      "compilationTarget": { "src/Signature.sol": "ECDSA" },
+      "evmVersion": "paris",
+      "libraries": {}
+    },
+    "sources": {
+      "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol": {
+        "keccak256": "0x5ef46daa3b58ef2702279d514780316efaa952915ee1aa3396f041ee2982b0b4",
+        "urls": [
+          "bzz-raw://2f8f2a76e23b02fc69e8cd24c3cb47da6c7af3a2d6c3a382f8ac25c6e094ade7",
+          "dweb:/ipfs/QmPV4ZS4tPVv4mTCf9ejyZ1ai57EEibDRj7mN2ARDCLV5n"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol": {
+        "keccak256": "0x7f7a26306c79a65fb8b3b6c757cd74660c532cd8a02e165488e30027dd34ca49",
+        "urls": [
+          "bzz-raw://d01e0b2b837ee2f628545e54d8715b49c7ef2befd08356c2e7f6c50dde8a1c22",
+          "dweb:/ipfs/QmWBAn6y2D1xgftci97Z3qR9tQnkvwQpYwFwkTvDMvqU4i"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
+        "keccak256": "0x37d1aaaa5a2908a09e9dcf56a26ddf762ecf295afb5964695937344fc6802ce1",
+        "urls": [
+          "bzz-raw://ed0bfc1b92153c5000e50f4021367b931bbe96372ac6facec3c4961b72053d02",
+          "dweb:/ipfs/Qmbwp8VDerjS5SV1quwHH1oMXxPQ93fzfLVqJ2RCqbowGE"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/Strings.sol": {
+        "keccak256": "0x55f102ea785d8399c0e58d1108e2d289506dde18abc6db1b7f68c1f9f9bc5792",
+        "urls": [
+          "bzz-raw://6e52e0a7765c943ef14e5bcf11e46e6139fa044be564881378349236bf2e3453",
+          "dweb:/ipfs/QmZEeeXoFPW47amyP35gfzomF9DixqqTEPwzBakv6cZw6i"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol": {
+        "keccak256": "0x4296879f55019b23e135000eb36896057e7101fb7fb859c5ef690cf14643757b",
+        "urls": [
+          "bzz-raw://87b3541437c8c443ccd36795e56a338ed12855eec17f8da624511b8d1a7e14df",
+          "dweb:/ipfs/QmeJQCtZrQjtJLr6u7ZHWeH3pBnjtLWzvRrKViAi7UZqxL"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/math/Math.sol": {
+        "keccak256": "0x005ec64c6313f0555d59e278f9a7a5ab2db5bdc72a027f255a37c327af1ec02d",
+        "urls": [
+          "bzz-raw://4ece9f0b9c8daca08c76b6b5405a6446b6f73b3a15fab7ff56e296cbd4a2c875",
+          "dweb:/ipfs/QmQyRpyPRL5SQuAgj6SHmbir3foX65FJjbVTTQrA2EFg6L"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/math/SignedMath.sol": {
+        "keccak256": "0x5f7e4076e175393767754387c962926577f1660dd9b810187b9002407656be72",
+        "urls": [
+          "bzz-raw://7d533a1c97cd43a57cd9c465f7ee8dd0e39ae93a8fb8ff8e5303a356b081cdcc",
+          "dweb:/ipfs/QmVBEei6aTnvYNZp2CHYVNKyZS4q1KkjANfY39WVXZXVoT"
+        ],
+        "license": "MIT"
+      },
+      "src/ERC721.sol": {
+        "keccak256": "0x0c8532956b2b6b3d1e57bea5130ea140f190d6eebdc852c88d34ab68db87794b",
+        "urls": [
+          "bzz-raw://e4e79de75ed08cabd3c14d7f99dfb20c043f6e109641aead6e3925ab46e21d73",
+          "dweb:/ipfs/QmSzR8z3W59q8VawwXQLjjR7fNb6gxcBwSAxMx16H1ZQYF"
+        ],
+        "license": "MIT"
+      },
+      "src/Signature.sol": {
+        "keccak256": "0xffe4e63cac192e0b193f130830a7403a62b0691607c04a99cf34b89d06379aeb",
+        "urls": [
+          "bzz-raw://3b2ae3fe1c3bf9c02f556eeece1ca4ce46483289e34167062ef855bdc2acefaa",
+          "dweb:/ipfs/Qmdf2TbKVsgNjLfTD49BHCmZ3C932nwxi7QebJWiwLg5dZ"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "id": 91
+}
