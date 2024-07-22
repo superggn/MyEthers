@@ -3,17 +3,21 @@
 // const { ethers } = require("ethers");
 const ethers = require("ethers");
 
-// 1. 创建provider和wallet，监听事件时候推荐用wss连接而不是http
-console.log("\n1. 连接 wss RPC");
-// 准备 alchemy API 可以参考https://github.com/AmazingAng/WTFSolidity/blob/main/Topics/Tools/TOOL04_Alchemy/readme.md
+console.log("wss RPC");
 const ALCHEMY_MAINNET_WSSURL =
   "wss://eth-mainnet.g.alchemy.com/v2/CkcrUboFNSh9RHdNm09Cud00Ns7_SxSR";
 const provider = new ethers.WebSocketProvider(ALCHEMY_MAINNET_WSSURL);
+
+// chain info
 let network = provider.getNetwork();
-// network.then(res => console.log(`[${(new Date).toLocaleTimeString()}] 连接到 chain ID ${res.chainId}`));
+network.then((res) =>
+  console.log(
+    `[${new Date().toLocaleTimeString()}] 连接到 chain ID ${res.chainId}`
+  )
+);
 
 console.log("\n2. 限制调用rpc接口速率");
-// 2. 限制访问rpc速率，不然调用频率会超出限制，报错。
+// rpc throttle
 function throttle(fn, delay) {
   let timer;
   return function () {
@@ -30,10 +34,7 @@ function throttle(fn, delay) {
 
 const main = async () => {
   let i = 0;
-  // 3. 监听pending交易，获取txHash
-  console.log("\n3. 监听pending交易，打印txHash。");
-  // 匿名函数 若传入的 txHash 不为空， 则打印 txhash
-  // part A
+  console.log("print pending txHash");
   // provider.on is a function that listens to mempool's pending transactions
   provider.on("pending", async (txHash) => {
     if (txHash && i < 100) {
@@ -44,28 +45,26 @@ const main = async () => {
       i++;
     }
   });
-  // 4. 监听pending交易，并获取交易详情
-  console.log("\n4. 监听pending交易，获取txHash，并输出交易详情。");
+  // 监听pending交易， 并获取交易详情
+  console.log("print pending txHash and tx info");
   let j = 0;
-  // part B
-  // the pending transactions printed in part B is not necessarily the very same as part A,
-  // and the sequence could be varied
+  // 这里用 provider.on 拿到的 tx 和上面的不一定一样
   provider.on(
     "pending",
     throttle(async (txHash) => {
       if (txHash && j <= 100) {
         // 获取tx详情
         let tx = await provider.getTransaction(txHash);
-        // const contractABI = [
-        //   "function transfer(address, uint) public returns (bool)",
-        // ];
-        // const iface = new ethers.Interface(contractABI);
-
-        // // 3. 获取函数选择器。
-        // const selector = iface.getFunction("transfer").selector;
-        // if (!(tx !== null && tx.data.indexOf(selector) !== -1)) {
-        //   return;
-        // }
+        // 打印调用合约特定函数的交易
+        const contractABI = [
+          "function transfer(address, uint) public returns (bool)",
+        ];
+        const iface = new ethers.Interface(contractABI);
+        // 过滤 fn selector
+        const selector = iface.getFunction("transfer").selector;
+        if (!(tx !== null && tx.data.indexOf(selector) !== -1)) {
+          return;
+        }
         console.log(
           `\n[${new Date().toLocaleTimeString()}] 监听Pending交易 ${j}: ${txHash} \r`
         );

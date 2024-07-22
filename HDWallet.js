@@ -2,23 +2,21 @@
 
 const { ethers } = require("ethers");
 
+// ethers V6
 const main = async () => {
-  // 1. 创建HD钱包 (ethers V6)
-  console.log("\n1. 创建HD钱包");
-  // 生成随机助记词
+  // gen random mnemonic
   const mnemonic = ethers.Mnemonic.entropyToPhrase(ethers.randomBytes(32));
-  // 创建HD基钱包
-  // 基路径："m / purpose' / coin_type' / account' / change"
+  // gen HD base wallet
+  // 基路径： "m / purpose' / coin_type' / account' / change"
   const basePath = "44'/60'/0'/0";
   //   console.log("mnemonic", mnemonic);
   const baseWallet = ethers.HDNodeWallet.fromPhrase(mnemonic, basePath);
   console.log(baseWallet);
-  // create one independent addr
+  //   create one independent addr
   //   const { ethers } = require("ethers");
   //   const signer = ethers.Wallet.createRandom();
 
-  // 2. 通过HD钱包派生20个钱包
-  console.log("\n2. 通过HD钱包派生20个钱包");
+  console.log("gen 20 addresses");
   const numWallet = 20;
   // 派生路径：基路径 + "/ address_index"
   // 我们只需要提供最后一位address_index的字符串格式，就可以从baseWallet派生出新钱包。

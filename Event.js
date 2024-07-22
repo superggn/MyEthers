@@ -4,13 +4,10 @@
 
 // import { ethers } from "ethers";
 
-const { ethers } = require("ethers");
+const ethers = require("ethers");
 
-// playcode免费版不能安装ethers，用这条命令，需要从网络上import包（把上面这行注释掉）
 // import { ethers } from "https://cdn-cors.ethers.io/lib/ethers-5.6.9.esm.min.js";
 
-// 利用Alchemy的rpc节点连接以太坊网络
-// 准备 alchemy API 可以参考https://github.com/AmazingAng/WTFSolidity/blob/main/Topics/Tools/TOOL04_Alchemy/readme.md
 
 const ALCHEMY_SEPOLIA_URL =
   "https://eth-sepolia.g.alchemy.com/v2/L3Q6Wq4EjqlEk2W8qQdavHwh9Zuykv3-";

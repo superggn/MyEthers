@@ -14,9 +14,9 @@ const GWEI = 10n ** 9n;
 const CHAIN_ID = 11155111; // sepolia测试网，如果用主网，chainid 改为 1
 
 // 1. 普通rpc （非flashbots rpc）
-const ALCHEMY_GOERLI_URL =
+const ALCHEMY_SEPOLIA_URL =
   "https://eth-sepolia.g.alchemy.com/v2/L3Q6Wq4EjqlEk2W8qQdavHwh9Zuykv3-";
-const provider = new ethers.JsonRpcProvider(ALCHEMY_GOERLI_URL);
+const provider = new ethers.JsonRpcProvider(ALCHEMY_SEPOLIA_URL);
 
 // 2. flashbots声誉私钥，用于建立“声誉”，详情见:
 // https://docs.flashbots.net/flashbots-auction/searchers/advanced/reputation
