@@ -10,6 +10,7 @@ const provider = new ethers.JsonRpcProvider(ALCHEMY_SEPOLIA_URL);
 // 利用私钥和provider创建wallet对象
 const privateKey =
   "0x503f38a9c967ed597e47fe25643985f032b072db8075426a92110f82df48dfcb";
+// 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
 const wallet = new ethers.Wallet(privateKey, provider);
 
 // 创建 EIP712 Domain
