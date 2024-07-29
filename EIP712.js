@@ -42,6 +42,27 @@ const message = {
   number: number,
 };
 
+// demo sig_2
+const domain2 = {
+  name: contractName,
+  version: "1",
+  chainId: chainId,
+  verifyingContract: contractAddress,
+};
+
+// my msg value types
+const types2 = {
+  Specialist: [
+    { name: "idWalletAddress", type: "address" },
+    { name: "powerLevel", type: "uint256" },
+  ],
+};
+const message2 = {
+  idWalletAddress: spender,
+  powerLevel: "5",
+};
+const sig_2 = wallet.signTypedData(domain2, types2, message2);
+
 const main = async () => {
   console.log("Message: ", message);
   // EIP712 签名
